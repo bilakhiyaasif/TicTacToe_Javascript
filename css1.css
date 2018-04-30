@@ -1,20 +1,55 @@
 body {
+margin-top:20px;
+text-align:center;
+font-weight:bold;
+font-style:monospace;
+background-color:black;
+color:white;
 }
-
 button
 {
-    width:60px;
-    height:60px;
-    border:1px solid white;
-    border-radius:0px;
-    background-color:coral;
-
-    padding:0px;
+    width:80px;
+    height:80px;
+    border:3px solid white;    
+    background-color:transparent;
+    font-weight:bold;
+    color:white;
 }
-
+#game
+{
+   display:none; 
+}
+#form1
+{
+    display:block;
+    background-color:transparent;
+}
 
 .text-info
 {
     border-top:1px solid green;
+    text-align:left;
+    color:white;
 }
-
+.log1
+{
+border-top:1px solid green;
+    text-align:left;
+    height:150px;
+    overflow:scroll 
+}
+#c1
+{
+    float:left;
+    border-right:1px solid green;    
+}
+#c2
+{
+    float:right;
+    border-left:1px solid green;
+}
+#wrapper
+{
+    overflow:auto;
+    border:1px solid green;    
+}
