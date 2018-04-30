@@ -1,47 +1,104 @@
+
+<!--
+
+TicTacToe 
+-Game 
+-Dynamic 
+-UI/UX
+-Control on Input
+
+Please Like,Comment,Follow
+Thank you
+© Asif Bilakhiya
+
+-->
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Game TicTacToe</title>
           <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link href="css1.css" rel="stylesheet" type="text/css">
+	    <link href="css1.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js1.js"></script>
+  
+     
     </head>
     <body>
-        
-        <div class="container-fluid class="border-1">
-           <button id="b1" value="1" onclick="button_click(this);">1</button>
-           <button id="b2" value="2" onclick="button_click(this);">2</button> 
-           <button id="b3" value="3" onclick="button_click(this);">3</button><br />
-           <button id="b4" value="4" onclick="button_click(this);">4</button>
-           <button id="b5" value="5" onclick="button_click(this);">5</button> 
-           <button id="b6" value="6" onclick="button_click(this);">6</button><br />
-           <button id="b7" value="7" onclick="button_click(this);">7</button> 
-           <button id="b8" value="8" onclick="button_click(this);">8</button>
-           <button id="b9" value="9" onclick="button_click(this);">9</button>           
+    <div id="game">
+           <button class="" id="b1" value="1" onclick="button_click(this);">-</button>
+           <button class="" id="b2" value="2" onclick="button_click(this);">-</button> 
+           <button class="" id="b3" value="3" onclick="button_click(this);">-</button><br />
+           <button class="" id="b4" value="4" onclick="button_click(this);">-</button>
+           <button class="" id="b5" value="5" onclick="button_click(this);">-</button> 
+           <button class="" id="b6" value="6" onclick="button_click(this);">-</button><br />
+           <button class="" id="b7" value="7" onclick="button_click(this);">-</button> 
+           <button class="" id="b8" value="8" onclick="button_click(this);">-</button>
+           <button class="" id="b9" value="9" onclick="button_click(this);">-</button>           
            
         
-        <br/>
-        <div class="text-info"><p>Turn:</p>
-       <p id="p_turn">player-1</p>
+        <br /><br />
+        
+        
+        <div class="text-info">     
+        <p>Turn:</p>
+        <p id="p_turn">player-1</p>
         <p id="p1_i"></p>
-        <p id="p2_i"></p>
+        <p id="p2_i"></p> 
         </div>
         
-		
-		<div style="border-top:1px solid green;">
-		<p>Game Log</p>
+        <div id="wrapper">
+        <div id="c1" class="log1">
         <p id="winner_set"></p>
-        </div>
-        </div>
+        </div>  
+      
+      <div id="c2">    
+      <p id="p1_set"></p>
+      <p id="p2_set"></p>
+      <p id="p3_set"></p>
+      </div>
+      
+      </div>
+</div>
+     
+     
+     
+     <div id="form1">
+        <form onsubmit="view_fn(this);">
         
         
-        
+      <div class="form-group"> 
+      <label for="name1">Player-1 Name:</label>  
+      <input type="text" class="form-control" id="a"/>
+      
+      <label for="sign1">  Player-1 sign:  </label>  
+      <input type="text" class="form-control" id="b"/>
+      </div>
+     
+      
+       <div class="form-group">
+       <label for="name2">Player-2 Name: </label> 
+       <input type="text" class="form-control" id="c"/>
+       <label for="sign2">Player-2 sign: </label>   
+      <input type="text" class="form-control" id="d"/>
+      </div>
+      
+<input type="button" class="btn btn-default" value="START" onclick="view_fn(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value);"/>
+        </form>         
+     </div> 
+      
+      
+   <div style="margin-top:10px;border-top:1px solid green;" class="text">
+       <b>Game By:</b>&copy<i>Asif Bilakhiya</i>
+       
+   </div>   
+      
+      
     </body>
 </html>
