@@ -1,0 +1,20 @@
+body {
+}
+
+button
+{
+    width:60px;
+    height:60px;
+    border:1px solid white;
+    border-radius:0px;
+    background-color:coral;
+
+    padding:0px;
+}
+
+
+.text-info
+{
+    border-top:1px solid green;
+}
+
