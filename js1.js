@@ -66,6 +66,7 @@ p_b_t.innerHTML=p2_name;
 else
 {
     alert("Invalid input\nplease try again");
+    b_id.style.backgroundColor="black";
 }
 }
 else
@@ -102,6 +103,7 @@ p_b_t.innerHTML=p1_name;
 else
 {
     alert("invalid input please try again");
+    b_id.style.backgroundColor="black";
 } 
 }   
 }
