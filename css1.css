@@ -10,13 +10,16 @@ button
 {
     width:80px;
     height:80px;
-    border:3px solid white;    
+    margin:;
+    padding:0px;
+    border:1px solid green;    
     background-color:transparent;
     font-weight:bold;
     color:white;
 }
 #game
 {
+  margin-top:5px;
    display:none; 
 }
 #form1
@@ -30,6 +33,7 @@ button
     border-top:1px solid green;
     text-align:left;
     color:white;
+    background-color:black;
 }
 .log1
 {
@@ -51,5 +55,6 @@ border-top:1px solid green;
 #wrapper
 {
     overflow:auto;
-    border:1px solid green;    
+    border:1px solid green;   
+  background-color:black;
 }
