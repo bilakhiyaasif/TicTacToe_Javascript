@@ -3,7 +3,6 @@ alert("If you find any bug please comment i will solve that one");
 alert("Before we start please fill this form\nThank you");
 var p1_name;
 var p11_sign;
-
 var p2_name;
 var p22_sign;
 var p1_c=0;
@@ -34,9 +33,10 @@ function button_click(obj)
    var p2_i=document.getElementById("p2_i");
 if(p_b_t.innerHTML==p1_name)
 {
-b_id.style.backgroundColor="green";
+//b_id.style.backgroundColor="green";
 if(board[i][j]==';')
 {
+b_id.style.backgroundColor="green";
 b_id.innerHTML=p1_sign;   
 board[i][j]=p1_sign;
 if(check_winner(p1_sign))
@@ -66,16 +66,16 @@ p_b_t.innerHTML=p2_name;
 else
 {
     alert("Invalid input\nplease try again");
-    b_id.style.backgroundColor="black";
 }
 }
 else
 {
-b_id.style.backgroundColor="indigo";
+//b_id.style.backgroundColor="indigo";
 if(board[i][j]==';')
 {
 b_id.innerHTML=p2_sign;   
 board[i][j]=p2_sign;
+b_id.style.backgroundColor="indigo";
 if(check_winner(p2_sign))
 {
 p2_c++;
@@ -103,7 +103,6 @@ p_b_t.innerHTML=p1_name;
 else
 {
     alert("invalid input please try again");
-    b_id.style.backgroundColor="black";
 } 
 }   
 }
